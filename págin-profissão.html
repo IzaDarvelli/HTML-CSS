@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Radio</title>
+</head>
+<body>
+    <nav class="nav_tabs">
+        <ul>
+            <li>
+                <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+                <label for="tab1" class="tab_label">Deixe de medo</label>
+                <div class="tab-content">
+                    <h2>Sonho</h2>
+                    <article>
+                      AVENTURAR-SE NO MUNDO!
+
+                      É o que minha alma e ser almejam. Ir além das fronteiras do nosso Brasil, afinal só se vive uma vez. FAÇA ACONETECER!
+						</article>
+					</div>
+				</li>
+				<li>
+					<input type="radio" name="tabs" class="rd_tab" id="tab2">
+					<label for="tab2" class="tab_label">Work</label>
+					<div class="tab-content">
+						<h2>Profissão</h2>
+						<article>
+						A profissão do fututo poderia ser combinada com arte de se contercer? Talvez, que sabe eu não consiga ser autodidata  nessa arte e sendo uma Web desenvolvedora. 
+						</article>
+					</div>
+				</li>
+				<li>
+					<input type="radio" name="tabs" class="rd_tab" id="tab3">
+					<label for="tab3" class="tab_label">Objetivos</label>
+					<div class="tab-content">
+						<h2>PROA</h2>
+						<article>
+							Umas das caracteristicas que amigos próximos dizem que tenho é a persistência. O PROA vem me mostrado que basta aproveitar as oportunidades que eles oferecem ser feliz com nossa evoluçaõ, mas particulamente eu não sei valorizar as minhas próprias conquistas, sempre acho que nunca farei o máximo sendo que o faço.
+						</article>
+					</div>
+				</li>
+				<li>
+					<input type="radio" name="tabs" class="rd_tab" id="tab4">
+					<label for="tab4" class="tab_label">O hábito de ler</label>
+					<div class="tab-content">
+						<h2>Se possível, leia até cansar de não o fazer!</h2>
+						<article>
+						Umas das caracteristicas mais marcantes na minha pessoa, é a leitura. Antes e durante a pandemia, tenho um hábito foraz na leitura sendo algo que me beneficia muito, me deixa feliz, melhoro meu vocabulário, aumenta meu repertório, me abre portas incríveis e claro me alimenta de conhecimento.
+						</article>
+					</div>
+				</li>
+			</ul>
+		</nav>
+        <style> 
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		background-color: #ddd;
+		font-family: 'Roboto Condensed';
+	}
+
+	.nav_tabs{
+		width: 600px;
+		height: 400px;
+		margin: 100px auto;
+		background-color: #fff;
+		position: relative;
+	}
+
+	.nav_tabs ul{
+		list-style: none;
+	}
+
+	.nav_tabs ul li{
+		float: left;
+	}
+
+	.tab_label{
+		display: block;
+		width: 100px;
+		background-color: #122557;
+		padding: 25px;
+		font-size: 20px;
+		color:#fff;
+		cursor: pointer;
+		text-align: center;
+	}
+
+
+	.nav_tabs .rd_tab { 
+	display:none;
+	position: absolute;
+}
+
+.nav_tabs .rd_tab:checked ~ label { 
+	background-color: #1a1211;
+	color:#fff;}
+
+.tab-content{
+	border-top: solid 5px #5f413f;
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	height: 320px;
+	width: 600px;
+	left: 0;	
+}
+
+.rd_tab:checked ~ .tab-content{
+	display: block;
+}
+.tab-content h2{
+	padding: 10px;
+	color: #0b0c0c;
+}
+.tab-content article{
+	padding: 10px;
+	color: #555;
+}
+        </style>
+</body>
+</html>
