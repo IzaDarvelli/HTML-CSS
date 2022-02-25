@@ -1,2 +1,3 @@
-# desatio-html-e-css
-Aqui estará a atividade 1 do Desafio HTML &amp; CSS 
+# Desafio HTML & CSS
+
+Uma página simples como se fosse um web site Personal.
